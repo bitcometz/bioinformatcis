@@ -1,5 +1,5 @@
 # m目录
-* [ONT]组装(#ONT组装)
+ * [ONT]组装(#ONT组装)
 
 ## ONT组装
 ONT官方推荐的组装流程: [Canu+Racon+Pilon](https://github.com/nanoporetech/ont-assembly-polish "点击")
