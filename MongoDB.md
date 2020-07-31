@@ -1,7 +1,7 @@
 # 目录
 * [安装](#安装)
-    ** [安装mongodb](#安装mongodb)
-    ** [安装pymongo](#安装pymongo)
+    * [安装mongodb](#安装mongodb)
+    * [安装pymongo](#安装pymongo)
 * [设置](#设置)
 * [例子](#例子)
 
