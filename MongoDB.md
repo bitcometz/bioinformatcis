@@ -56,7 +56,7 @@ import pymongo
 ## 链接数据库
 client = pymongo.MongoClient(host='localhost', port=2009) ## 根据自己的端口设置
 
-## 创立数据库，类似可以建micor_hw
+## 创立数据库，类似可以建micro_hw
 db = client['my_database']
 ## 指定集合, 类似表格, 类似可以建16S, reseq
 collection = db['students']
