@@ -39,7 +39,7 @@ dbpath=/your_path/data
 port=2009
 ```
 
-然后执行：
+然后执行(需要一直在后台执行)：
 ```
 mongod -f /your_path/mongo.cfg
 ```
