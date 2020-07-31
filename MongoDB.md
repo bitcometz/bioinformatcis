@@ -1,11 +1,15 @@
 # 目录
 * [安装](#安装)
+    ** [安装mongodb](#安装mongodb)
+    ** [安装pymongo](#安装pymongo)
+* [设置](#设置)
+* [例子](#例子)
 
 
 ## 安装
 
-## 设置
 
+### 安装mongodb
 用conda安装：
 ```
 conda install -c anaconda mongodb
@@ -17,7 +21,17 @@ export PATH=/usr/local/mongodb/bin:$PATH
 ```
 source activate /ifs/TJPROJ3/HWUS/USER/zhangjinbo/00.pipelines/00.conda/envs/mongodb_env
 ```
+### 安装pymongo
+类似我们最好是用python来操作数据库，因此需要先安装pymongo
+```
+pip3 install pymongo
+```
+天津集群的这个python3安装好了：
+```
+/ifs/TJPROJ3/HWUS/USER/zhangjinbo/00.pipelines/01.software/miniconda3/bin/python3
+```
 
+## 设置
 配置存放个数据库存储目录
 先创立一个文件：`/your_path/mongo.cfg`, 写入下面内容, 注意data到这个目录事先建立好
 ```
@@ -30,16 +44,9 @@ port=2009
 mongod -f /your_path/mongo.cfg
 ```
 
-类似我们最好是用python来操作数据库，因此需要先安装pymongo
-```
-pip3 install pymongo
-```
-天津集群的这个python3安装好了：
-```
-/ifs/TJPROJ3/HWUS/USER/zhangjinbo/00.pipelines/01.software/miniconda3/bin/python3
-```
 
-简单的例子：
+## 例子
+
 ```python
 import pymongo
 ## 链接数据库
