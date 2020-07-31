@@ -46,6 +46,10 @@ mongod -f /your_path/mongo.cfg
 
 
 ## 例子
+路径：
+```
+/ifs/TJPROJ3/HWUS/USER/zhangjinbo/00.pipelines/01.software/miniconda3/bin/python3 test.py
+```
 
 ```python
 import pymongo
@@ -56,7 +60,7 @@ client = pymongo.MongoClient(host='localhost', port=2009) ## 根据自己的端�
 db = client['my_database']
 ## 指定集合, 类似表格, 类似可以建16S, reseq
 collection = db['students']
-## 类似地只要我们再流程或者小脚本把项目的相关信息存储成类似地json文件即可加入到数据库里面
+## 类似地只要我们的流程或者小脚本把项目的相关信息存储成类似地json文件即可加入到数据库里面
 student = {
     'id': '20170101',
     'name': 'Jordan',
@@ -76,6 +80,7 @@ student2 = {
     'age': 21,
     'gender': 'male'
 }
+
 ## 插入一个值
 result = collection.insert_one(student)
 
